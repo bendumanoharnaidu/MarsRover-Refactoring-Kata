@@ -1,18 +1,18 @@
 package org.example;
 
 public class MarsRover {
-    private final Boundary boundary;
-    private Point point;
+    private final PlateausBoundary plateausBoundary;
+    private Coordinate coordinate;
     private Direction direction;
-    private String instructions;
-    public MarsRover(int x, int y, char direction, String instructions, Boundary boundary) {
-        this.boundary = boundary;
-        this.point = new Point(x, y);
+    private final String instructions;
+    public MarsRover(int x_coordinate, int y_coordinate, char direction, String instructions, PlateausBoundary plateausBoundary) {
+        this.plateausBoundary = plateausBoundary;
+        this.coordinate = new Coordinate(x_coordinate, y_coordinate);
         this.direction = InitilizeDirection.setDirection(direction);
         this.instructions = instructions;
     }
     public String move() throws Exception{
-        if (!boundary.isWithinBoundary(point)) {
+        if (!plateausBoundary.isWithinBoundary(coordinate)) {
             throw new IllegalArgumentException("Invalid point");
         }
         for (int i= 0; i < instructions.length(); i++) {
@@ -24,13 +24,13 @@ public class MarsRover {
                 direction = direction.turnRight();
             }
             else if (instruction == 'M') {
-                direction.moveForward(point);
-                if (!boundary.isWithinBoundary(point)) {
+                coordinate.moveByOneStep(direction);
+                if (!plateausBoundary.isWithinBoundary(coordinate)) {
                     throw new IllegalArgumentException("Invalid point");
                 }
             }
         }
-        return point.getX() + " " + point.getY() + " " + direction.currentDirection();
+        return coordinate.getXCoordinate() + " " + coordinate.getYCoordinate() + " " + direction.currentDirection();
 
     }
 

@@ -15,9 +15,4 @@ public class South implements Direction {
     public Direction turnRight() {
         return new West();
     }
-
-    @Override
-    public void moveForward(Point point) {
-        point.setY(point.getY() - 1);
-    }
 }

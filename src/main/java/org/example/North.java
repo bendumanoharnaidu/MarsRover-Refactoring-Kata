@@ -13,8 +13,4 @@ public class North implements Direction {
     public Direction turnRight() {
         return new East();
     }
-    @Override
-    public void moveForward(Point point) {
-        point.setY(point.getY() + 1);
-    }
 }

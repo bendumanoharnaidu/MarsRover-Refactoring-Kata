@@ -5,34 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8020cf37-c3df-4290-bf92-37694dec0a90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Boundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/East.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InitilizeDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MarsRover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/North.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/South.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/West.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MarsRoverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PlateausBoundary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/CoordinateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/PlateausBoundaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Boundary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/East.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/East.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MarsRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MarsRover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/North.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/North.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/South.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/South.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/West.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/West.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MarsRoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/MarsRoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -63,6 +62,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "JUnit.BoundaryTest.testWithNegativeX.executor": "Run",
+    "JUnit.BoundaryTest.testWithNegativeY.executor": "Run",
+    "JUnit.BoundaryTest.testWithXandY.executor": "Run",
+    "JUnit.BoundaryTest.testWithXandYOutsideBoundary.executor": "Run",
+    "JUnit.CoordinateTest.executor": "Run",
+    "JUnit.CoordinateTest.moveByOneStep.executor": "Run",
+    "JUnit.CoordinateTest.moveByOneStepNorth.executor": "Run",
     "JUnit.MarsRoverTest.acceptance_test_1.executor": "Run",
     "JUnit.MarsRoverTest.acceptance_test_1_ForBoundary.executor": "Run",
     "JUnit.MarsRoverTest.acceptance_test_2_ForBoundary.executor": "Run",
@@ -72,9 +78,13 @@
     "JUnit.MarsRoverTest.executor": "Run",
     "JUnit.MarsRoverTest.testWithNegativeX.executor": "Run",
     "JUnit.MarsRoverTest.testWithNegativeY.executor": "Run",
+    "JUnit.PlateauTest.executor": "Coverage",
+    "JUnit.PlateausBoundaryTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/bendu.naidu_ftc/Desktop/MarsRover-Refactoring-Kata",
@@ -91,67 +101,102 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.MarsRoverTest">
-    <configuration name="MarsRoverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CoordinateTest">
+    <configuration name="CoordinateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRover-Refactoring-Kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CoordinateTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTest.acceptance_test_1_ForBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoordinateTest.moveByOneStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRover-Refactoring-Kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTest" />
-      <option name="METHOD_NAME" value="acceptance_test_1_ForBoundary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CoordinateTest" />
+      <option name="METHOD_NAME" value="moveByOneStep" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTest.acceptance_test_2_ForBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoordinateTest.moveByOneStepNorth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRover-Refactoring-Kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTest" />
-      <option name="METHOD_NAME" value="acceptance_test_2_ForBoundary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.CoordinateTest" />
+      <option name="METHOD_NAME" value="moveByOneStepNorth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTest.acceptance_test_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarsRoverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRover-Refactoring-Kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTest" />
-      <option name="METHOD_NAME" value="acceptance_test_3" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.MarsRoverTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTest.acceptance_test_3_ForBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlateausBoundaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MarsRover-Refactoring-Kata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MarsRoverTest" />
-      <option name="METHOD_NAME" value="acceptance_test_3_ForBoundary" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.PlateausBoundaryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoordinateTest" />
         <item itemvalue="JUnit.MarsRoverTest" />
-        <item itemvalue="JUnit.MarsRoverTest.acceptance_test_3_ForBoundary" />
-        <item itemvalue="JUnit.MarsRoverTest.acceptance_test_2_ForBoundary" />
-        <item itemvalue="JUnit.MarsRoverTest.acceptance_test_3" />
-        <item itemvalue="JUnit.MarsRoverTest.acceptance_test_1_ForBoundary" />
+        <item itemvalue="JUnit.CoordinateTest.moveByOneStepNorth" />
+        <item itemvalue="JUnit.CoordinateTest.moveByOneStep" />
+        <item itemvalue="JUnit.PlateausBoundaryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +217,10 @@
       <updated>1707475503533</updated>
       <workItem from="1707475504607" duration="224000" />
       <workItem from="1707475737795" duration="4166000" />
-      <workItem from="1707663668792" duration="3914000" />
+      <workItem from="1707663668792" duration="5151000" />
+      <workItem from="1707673490743" duration="533000" />
+      <workItem from="1707711752637" duration="91000" />
+      <workItem from="1707711899700" duration="9292000" />
     </task>
     <servers />
   </component>
@@ -181,5 +229,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MarsRover_Refactoring_Kata$MarsRoverTest.ic" NAME="MarsRoverTest Coverage Results" MODIFIED="1707716224716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MarsRover_Refactoring_Kata$CoordinateTest.ic" NAME="CoordinateTest Coverage Results" MODIFIED="1707716252366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MarsRover_Refactoring_Kata$PlateauTest.ic" NAME="PlateauTest Coverage Results" MODIFIED="1707716233870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>
